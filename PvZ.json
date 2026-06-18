@@ -4655,9 +4655,9 @@
                               "parameters": [
                                 "MousePreview",
                                 "=",
-                                "CursorX(\"UI\", 0) - Object.X()",
+                                "CursorX(\"UI\", 0)",
                                 "=",
-                                "CursorY(\"UI\", 0) - Object.Y()"
+                                "CursorY(\"UI\", 0)"
                               ]
                             },
                             {
@@ -4779,9 +4779,9 @@
                           "parameters": [
                             "MousePreview",
                             "=",
-                            "CursorX(\"UI\", 0) - Object.X()",
+                            "CursorX(\"UI\", 0)",
                             "=",
-                            "CursorY(\"UI\", 0) - Object.Y()"
+                            "CursorY(\"UI\", 0)"
                           ]
                         },
                         {
