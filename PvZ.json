@@ -1,0 +1,5520 @@
+{
+  "firstLayout": "main",
+  "gdVersion": {
+    "build": 269,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "initialGDVersion": "5.6.269",
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": false,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "1ce1c283-be96-420c-ac18-33c06fed2718",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "version": "1.0.0",
+    "name": "PvZ",
+    "description": "",
+    "author": "",
+    "windowWidth": 1000,
+    "windowHeight": 600,
+    "latestCompilationDirectory": "D:\\download\\11",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/background1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/background1.jpg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sun_bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sun_bg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SunFlower.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/SunFlower.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SunFlowerG.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/SunFlowerG.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/shovel_bg.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/shovel_bg.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/shovel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/shovel.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FlagMeterEmpty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/FlagMeterEmpty.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FlagMeterFull.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/FlagMeterFull.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/FlagMeterParts1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/FlagMeterParts1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/button.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sun.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sun.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/SunFlowerSlotCooldownMask.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/SunFlowerSlotCooldownMask.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sunflowerCard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sunflowerCard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/peashooterCard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/peashooterCard.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ]
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "button",
+      "persistentUuid": "d9e9decd-0d60-4dd8-a7f1-df0f6319ce37",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/button.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "NewText",
+      "persistentUuid": "283cbda3-2d7d-4944-b36b-5253bd00a4b0",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Settings",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 25,
+      "color": {
+        "b": 253,
+        "g": 253,
+        "r": 253
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Settings",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 25,
+        "lineHeight": 0,
+        "color": "253;253;253"
+      }
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "button"
+      },
+      {
+        "objectName": "NewText"
+      }
+    ]
+  },
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "SunFlowerSlotCooldownDuration",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "name": "HideGroundSlots",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "layouts": [
+    {
+      "b": 170,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "main",
+      "name": "main",
+      "r": 170,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 170,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 1.168447332621997,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "SunCountValue",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "SunflowerPlacementRequested",
+          "type": "string",
+          "value": "false"
+        },
+        {
+          "name": "SunflowerPlacementX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SunflowerPlacementY",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Yard",
+          "persistentUuid": "0490e6fc-d145-4b6a-97e2-d82295d2672e",
+          "width": 0,
+          "x": -134,
+          "y": -1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.25,
+          "height": 95,
+          "layer": "GroundSlot",
+          "name": "GroundSlot",
+          "persistentUuid": "6e2f6185-1e45-4803-bfd3-eb99b56ad8cd",
+          "width": 80,
+          "x": 121,
+          "y": 85,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "IsAnchor",
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "sun_bg",
+          "persistentUuid": "ed922c35-a024-493b-a804-fb8082985343",
+          "width": 0,
+          "x": 127,
+          "y": 14,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "SunCount",
+          "persistentUuid": "dfe84d61-1191-4ed9-8b5c-b7f69524570b",
+          "width": 0,
+          "x": 170,
+          "y": 11,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "shovel_bg",
+          "persistentUuid": "77572f24-c8d7-44c2-9077-967ab859719f",
+          "width": 0,
+          "x": 770,
+          "y": 10,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "shovel",
+          "persistentUuid": "004f20c3-9c23-4b8a-8ca7-e2e6d8f5dbca",
+          "width": 0,
+          "x": 769,
+          "y": 11,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlagMeterEmpty",
+          "persistentUuid": "3d5dc2d8-75ef-4010-a929-09820099d2e4",
+          "width": 0,
+          "x": 344,
+          "y": 573,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlagMeterFull",
+          "persistentUuid": "28e0a0b7-5127-45b1-9e6a-9c54d393e8d4",
+          "width": 0,
+          "x": 348,
+          "y": 572,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "FlagMeterParts1",
+          "persistentUuid": "c6cff27e-d123-46b0-a681-4055fac2de5b",
+          "width": 0,
+          "x": 338,
+          "y": 570,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 71,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "peashooterCard",
+          "persistentUuid": "b3e36dc4-fc97-4571-9cfa-7233d8dfc3a6",
+          "width": 112,
+          "x": 389,
+          "y": 1,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "SunFlowerCardSlot",
+          "persistentUuid": "f7c3c231-b142-4e85-85cd-4e75e76a3a29",
+          "width": 0,
+          "x": 270,
+          "y": 4,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Battle",
+          "name": "NewSprite",
+          "persistentUuid": "9d45a22a-a7a9-4f10-9b36-f821d6bf0305",
+          "width": 0,
+          "x": 207,
+          "y": 279,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "SunFlowerCardSlot",
+          "persistentUuid": "c2d6001e-9e2f-4205-898d-ee8a0651c13c",
+          "type": "PlantCards::PlantCardSlot",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Yard",
+          "persistentUuid": "6de52c8e-b254-4ea0-8209-da5f4aeb0fdc",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/background1.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1400,
+                            "y": 0
+                          },
+                          {
+                            "x": 1400,
+                            "y": 600
+                          },
+                          {
+                            "x": 0,
+                            "y": 600
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "GroundSlot",
+          "persistentUuid": "a9ddf7ad-b6d4-4698-8702-3a5dc87f6c96",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Occupied",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "SlotColumn",
+              "type": "number",
+              "value": -1
+            },
+            {
+              "name": "SlotRow",
+              "type": "number",
+              "value": -1
+            },
+            {
+              "name": "SlotIndex",
+              "type": "number",
+              "value": -1
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 63,
+                            "y": 2
+                          },
+                          {
+                            "x": 63,
+                            "y": 62
+                          },
+                          {
+                            "x": 1,
+                            "y": 62
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Sunflower",
+          "persistentUuid": "5e1b341f-2002-4ccc-8419-13ecf6f07fa3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "SunSpawnTimer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "IsPreview",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 15
+                          },
+                          {
+                            "x": 67,
+                            "y": 77
+                          },
+                          {
+                            "x": 6,
+                            "y": 77
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "sun_bg",
+          "persistentUuid": "a98594ee-bdae-4d1a-bc6a-fd052756a9db",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/sun_bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "SunCount",
+          "persistentUuid": "fa73ea41-2232-4612-82df-f970ad85c22e",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "100",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 34,
+          "color": {
+            "b": 56,
+            "g": 56,
+            "r": 54
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "100",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 34,
+            "lineHeight": 0,
+            "color": "54;56;56"
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "shovel_bg",
+          "persistentUuid": "d8ce1fb9-e1f0-4f9b-baf9-319ac0f6a71a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/shovel_bg.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "shovel",
+          "persistentUuid": "09436991-d541-4ec4-8517-b3466f25fb3c",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/shovel.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FlagMeterEmpty",
+          "persistentUuid": "d6b6557b-08d9-4bbf-8d8d-dc4c21bcaa68",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/FlagMeterEmpty.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FlagMeterFull",
+          "persistentUuid": "8ac63aae-bcab-4bf1-9d6d-8aa20ab6618c",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/FlagMeterFull.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FlagMeterParts1",
+          "persistentUuid": "c3b20530-6c32-4430-a9fe-02c38d2e57a3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/FlagMeterParts1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "sun",
+          "persistentUuid": "de465320-91a6-4fe0-99b9-7eaf37d15c21",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Age",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "BlinkTimer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "BlinkVisible",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "Collecting",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "CollectTimer",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CollectStartX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CollectStartY",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets/sun.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": false,
+                        "name": "centre",
+                        "x": 40,
+                        "y": 40
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "peashooterCard",
+          "persistentUuid": "f3f140a7-9de9-47ba-a221-32fcde7f0926",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/peashooterCard.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "persistentUuid": "12ea6f6b-0dc7-4958-83e2-69283a217c3a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 12,
+                            "y": 12
+                          },
+                          {
+                            "x": 44,
+                            "y": 12
+                          },
+                          {
+                            "x": 44,
+                            "y": 46
+                          },
+                          {
+                            "x": 12,
+                            "y": 46
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Yard"
+          },
+          {
+            "objectName": "GroundSlot"
+          },
+          {
+            "objectName": "Sunflower"
+          },
+          {
+            "objectName": "sun_bg"
+          },
+          {
+            "objectName": "SunCount"
+          },
+          {
+            "objectName": "shovel_bg"
+          },
+          {
+            "objectName": "shovel"
+          },
+          {
+            "objectName": "FlagMeterEmpty"
+          },
+          {
+            "objectName": "FlagMeterFull"
+          },
+          {
+            "objectName": "FlagMeterParts1"
+          },
+          {
+            "objectName": "sun"
+          },
+          {
+            "objectName": "peashooterCard"
+          },
+          {
+            "objectName": "SunFlowerCardSlot"
+          },
+          {
+            "objectName": "NewSprite"
+          }
+        ]
+      },
+      "events": [
+        {
+          "colorB": 214,
+          "colorG": 118,
+          "colorR": 92,
+          "creationTime": 0,
+          "name": "Initialization",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "aiGeneratedEventId": "mcp-direct-event",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "folded": true,
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Draw ground slots (5 rows x 9 columns)"
+                },
+                {
+                  "aiGeneratedEventId": "groundslot-grid-standard-local-vars",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "StartX",
+                        "=",
+                        "GroundSlot.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "StartY",
+                        "=",
+                        "GroundSlot.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SlotWidth",
+                        "=",
+                        "GroundSlot.Width()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SlotHeight",
+                        "=",
+                        "GroundSlot.Height()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Row",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "GroundSlot",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Repeat",
+                      "repeatExpression": "RowCount",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Column",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Repeat",
+                          "repeatExpression": "ColumnCount",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "GroundSlot",
+                                "StartX + Column * SlotWidth",
+                                "StartY + Row * SlotHeight",
+                                "\"GroundSlot\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResizableCapability::ResizableBehavior::SetSize"
+                              },
+                              "parameters": [
+                                "GroundSlot",
+                                "Resizable",
+                                "SlotWidth",
+                                "SlotHeight"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "GroundSlot",
+                                "SlotIndex",
+                                "=",
+                                "Row * ColumnCount + Column"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "GroundSlot",
+                                "SlotRow",
+                                "=",
+                                "Row"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberObjectVariable"
+                              },
+                              "parameters": [
+                                "GroundSlot",
+                                "SlotColumn",
+                                "=",
+                                "Column"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanObjectVariable"
+                              },
+                              "parameters": [
+                                "GroundSlot",
+                                "Occupied",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Column",
+                                "+",
+                                "1"
+                              ]
+                            }
+                          ],
+                          "events": [
+                            {
+                              "aiGeneratedEventId": "groundslot-created-alpha-from-switch",
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "HideGroundSlots",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                                  },
+                                  "parameters": [
+                                    "GroundSlot",
+                                    "Opacity",
+                                    "=",
+                                    "0"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "folded": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "Row",
+                                "+",
+                                "1"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "variables": [
+                    {
+                      "name": "RowCount",
+                      "type": "number",
+                      "value": 5
+                    },
+                    {
+                      "name": "ColumnCount",
+                      "type": "number",
+                      "value": 9
+                    },
+                    {
+                      "name": "StartX",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "StartY",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "SlotWidth",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "SlotHeight",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "Row",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "Column",
+                      "type": "number",
+                      "value": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "groundslot-click-log-group",
+          "colorB": 92,
+          "colorG": 146,
+          "colorR": 86,
+          "creationTime": 0,
+          "name": "Ground slot input",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "aiGeneratedEventId": "groundslot-click-log-occupied",
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "GroundSlot",
+                    "",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZOrder"
+                  },
+                  "parameters": [
+                    "GroundSlot",
+                    ">=",
+                    "500"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"GroundSlot clicked: index=\" + ToString(GroundSlot.Variable(SlotIndex)) + \", row=\" + ToString(GroundSlot.Variable(SlotRow)) + \", column=\" + ToString(GroundSlot.Variable(SlotColumn)) + \", occupied=true\"",
+                    "\"info\"",
+                    "\"GroundSlot\""
+                  ]
+                }
+              ]
+            },
+            {
+              "aiGeneratedEventId": "groundslot-click-log-empty",
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "GroundSlot",
+                    "",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZOrder"
+                  },
+                  "parameters": [
+                    "GroundSlot",
+                    "<",
+                    "500"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "DebuggerTools::ConsoleLog"
+                  },
+                  "parameters": [
+                    "\"GroundSlot clicked: index=\" + ToString(GroundSlot.Variable(SlotIndex)) + \", row=\" + ToString(GroundSlot.Variable(SlotRow)) + \", column=\" + ToString(GroundSlot.Variable(SlotColumn)) + \", occupied=false\"",
+                    "\"info\"",
+                    "\"GroundSlot\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "planting-input-group",
+          "colorB": 67,
+          "colorG": 162,
+          "colorR": 224,
+          "creationTime": 0,
+          "name": "Planting input",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "aiGeneratedEventId": "plant-card-handle-sunflower-card-per-slot",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "GroundSlot"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlantCards::PlantCardSlot::Handle"
+                  },
+                  "parameters": [
+                    "SunFlowerCardSlot",
+                    "GroundSlot",
+                    "SunCountValue",
+                    "50",
+                    "GlobalVariable(SunFlowerSlotCooldownDuration)",
+                    "SunflowerPlacementRequested",
+                    "SunflowerPlacementX",
+                    "SunflowerPlacementY",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "SunCount",
+                    "Text",
+                    "=",
+                    "ToString(Variable(SunCountValue))"
+                  ]
+                }
+              ]
+            },
+            {
+              "aiGeneratedEventId": "plant-card-create-sunflower-from-slot-request",
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "SunflowerPlacementRequested",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Sunflower",
+                    "Variable(SunflowerPlacementX)",
+                    "Variable(SunflowerPlacementY)",
+                    "\"Battle\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "=",
+                    "Variable(SunflowerPlacementX)",
+                    "=",
+                    "Variable(SunflowerPlacementY)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "SunSpawnTimer",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "IsPreview",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "sun-production-group",
+          "colorB": 73,
+          "colorG": 202,
+          "colorR": 234,
+          "creationTime": 0,
+          "name": "Sun production",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "aiGeneratedEventId": "sunflower-production-for-each-planted",
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Sunflower",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ZOrder"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Sunflower",
+                    "SunSpawnTimer",
+                    "+",
+                    "TimeDelta()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "aiGeneratedEventId": "sunflower-spawn-sun-every-five-seconds",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Sunflower",
+                        "SunSpawnTimer",
+                        ">=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Sunflower",
+                        "SunSpawnTimer",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "sun",
+                        "Sunflower.X()",
+                        "Sunflower.Y()",
+                        "\"Battle\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "sun",
+                        "=",
+                        "Sunflower.X() + Sunflower.Width() / 2",
+                        "=",
+                        "Sunflower.Y() - 20"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "Age",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "BlinkTimer",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "BlinkVisible",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "Collecting",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "CollectTimer",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "CollectStartX",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "CollectStartY",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "sun",
+                        "Opacity",
+                        "=",
+                        "255"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "aiGeneratedEventId": "sun-idle-lifecycle-update",
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "sun",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Collecting",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Age",
+                    "+",
+                    "TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "sun",
+                    "+",
+                    "45 * TimeDelta()"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "aiGeneratedEventId": "sun-idle-blink-timer-after-three-seconds",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "Age",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "BlinkTimer",
+                        "+",
+                        "TimeDelta()"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "aiGeneratedEventId": "sun-blink-dim",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkTimer",
+                            ">=",
+                            "0.25"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkVisible",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "sun",
+                            "Opacity",
+                            "=",
+                            "70"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkVisible",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkTimer",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "sun-blink-bright",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkTimer",
+                            ">=",
+                            "0.25"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkVisible",
+                            "False"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "sun",
+                            "Opacity",
+                            "=",
+                            "255"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkVisible",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberObjectVariable"
+                          },
+                          "parameters": [
+                            "sun",
+                            "BlinkTimer",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "aiGeneratedEventId": "sun-expire-after-five-seconds",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "Age",
+                        ">=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "sun",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "aiGeneratedEventId": "sun-click-start-collection",
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "sun",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorX(\"Battle\", 0)",
+                    ">=",
+                    "sun.X()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorX(\"Battle\", 0)",
+                    "<=",
+                    "sun.X() + sun.Width()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorY(\"Battle\", 0)",
+                    ">=",
+                    "sun.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "CursorY(\"Battle\", 0)",
+                    "<=",
+                    "sun.Y() + sun.Height()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Collecting",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Collecting",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "CollectTimer",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "CollectStartX",
+                    "=",
+                    "sun.X() + sun.Width() / 2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "CollectStartY",
+                    "=",
+                    "sun.Y() + sun.Height() / 2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "sun",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "sun",
+                    "=",
+                    "20"
+                  ]
+                }
+              ]
+            },
+            {
+              "aiGeneratedEventId": "sun-collect-move-to-counter",
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "sun",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "Collecting",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "sun",
+                    "CollectTimer",
+                    "+",
+                    "TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "sun",
+                    "+",
+                    "180 * TimeDelta()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "sun",
+                    "=",
+                    "sun.Variable(CollectStartX) + ((SunCount.X() + 25) - sun.Variable(CollectStartX)) * sun.Variable(CollectTimer) / 0.6",
+                    "=",
+                    "sun.Variable(CollectStartY) + ((SunCount.Y() + 17) - sun.Variable(CollectStartY)) * sun.Variable(CollectTimer) / 0.6"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "aiGeneratedEventId": "sun-collect-finish",
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "sun",
+                        "CollectTimer",
+                        ">=",
+                        "0.6"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SunCountValue",
+                        "+",
+                        "25"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "SunCount",
+                        "Text",
+                        "=",
+                        "ToString(Variable(SunCountValue))"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "sun",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "aiGeneratedEventId": "external-event-links-group",
+          "colorB": 168,
+          "colorG": 91,
+          "colorR": 128,
+          "creationTime": 0,
+          "name": "External event links",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "UI"
+            }
+          ],
+          "parameters": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": true,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "GroundSlot",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Battle",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "global_32_40for_32external_41",
+      "name": "global (for external)",
+      "r": 247,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 249,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.7,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    }
+  ],
+  "externalEvents": [
+    {
+      "associatedLayout": "global (for external)",
+      "name": "UI",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"UI\"",
+                "0",
+                "0",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "User interface",
+      "dimension": "2D",
+      "extensionNamespace": "PlantCards",
+      "fullName": "Plant Cards",
+      "gdevelopVersion": "",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "PlantCards",
+      "previewIconUrl": "",
+      "shortDescription": "Reusable plant card UI and placement logic.",
+      "version": "1.0.0",
+      "description": "Handles plant card affordability, click-to-preview, placement, cost deduction, and cooldown mask updates for PvZ-style cards.",
+      "tags": [
+        "plant",
+        "card",
+        "ui",
+        "cooldown"
+      ],
+      "authorIds": [],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": [
+        {
+          "areaMaxX": 105,
+          "areaMaxY": 67,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "PlantCardSlot",
+          "description": "Reusable PvZ-style plant card UI. Owns the card sprite, cooldown mask, and mouse preview sprite internally.",
+          "fullName": "Plant card slot",
+          "helpPath": "",
+          "iconUrl": "",
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "PlantCardSlot",
+          "previewIconUrl": "",
+          "objects": [
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "Card",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "Active",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflowerCard.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 0
+                              },
+                              {
+                                "x": 105,
+                                "y": 0
+                              },
+                              {
+                                "x": 105,
+                                "y": 67
+                              },
+                              {
+                                "x": 0,
+                                "y": 67
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Inactive",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/SunFlowerG.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 0
+                              },
+                              {
+                                "x": 105,
+                                "y": 0
+                              },
+                              {
+                                "x": 105,
+                                "y": 67
+                              },
+                              {
+                                "x": 0,
+                                "y": 67
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "CooldownMask",
+              "persistentUuid": "e364a91b-aced-4125-b36f-9aa9209b80c0",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "Default",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "assets/SunFlowerSlotCooldownMask.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "MousePreview",
+              "persistentUuid": "2b277954-dde8-47fc-ae5f-987e5e96c37d",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "Default",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "assets/SunFlower.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "Card"
+              },
+              {
+                "objectName": "CooldownMask"
+              },
+              {
+                "objectName": "MousePreview"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "Card",
+              "persistentUuid": "caa5f0e6-5b6a-4b30-bab4-ddb101f60448",
+              "width": 0,
+              "x": 0,
+              "y": 0,
+              "zOrder": 0,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1,
+              "height": 67,
+              "keepRatio": true,
+              "layer": "",
+              "name": "CooldownMask",
+              "opacity": 0,
+              "persistentUuid": "10e1cb36-e45b-4823-92b5-5b63117d9825",
+              "width": 105,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "MousePreview",
+              "opacity": 0,
+              "persistentUuid": "5f642cd7-07ca-4fac-a3bb-c7edb6d8bfbf",
+              "width": 0,
+              "x": -10000,
+              "y": -10000,
+              "zOrder": 20,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridDepth": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridOffsetZ": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 5.838435821147727,
+            "windowMask": false,
+            "selectedLayer": "",
+            "gameEditorMode": "instances-editor"
+          },
+          "eventsFunctions": [
+            {
+              "description": "Handle a reusable plant card slot with internal Card, CooldownMask, and MousePreview UI: affordability, cost deduction, cooldown, preview following, and placement request output.",
+              "fullName": "Handle plant card slot",
+              "functionType": "Action",
+              "name": "Handle",
+              "sentence": "Handle _PARAM0_ with slots _PARAM1_, sun counter _PARAM2_, sun value _PARAM3_, cooldown _PARAM4_, placement _PARAM5_ at _PARAM6_;_PARAM7_",
+              "events": [
+                {
+                  "colorB": 196,
+                  "colorG": 122,
+                  "colorR": 94,
+                  "creationTime": 0,
+                  "name": "Plant card slot runtime",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-reset-placement-output",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementRequested",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementX",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementY",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlacementRequested",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlacementX",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlacementY",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementRequestedVariable\"",
+                            "PlacementRequested"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementXVariable\"",
+                            "PlacementX"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementYVariable\"",
+                            "PlacementY"
+                          ]
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "PlacementRequested",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "PlacementX",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "PlacementY",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-initialize-state",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardInitialized",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardInitialized",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCooldownTimer",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardReady",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementRequested",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementX",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementY",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Card",
+                            "Animation",
+                            "=",
+                            "\"Active\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetXY"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "=",
+                            "0",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "Resizable",
+                            "Card.Width()",
+                            "Card.Height()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "Opacity",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetXY"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "=",
+                            "-10000",
+                            "=",
+                            "-10000"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetZOrder"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "=",
+                            "Card.ZOrder() + 20"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "Opacity",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-select-read-sun",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "IsCursorOnObject"
+                          },
+                          "parameters": [
+                            "Card",
+                            "",
+                            "no",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "False",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "CopyArgumentToVariable2"
+                          },
+                          "parameters": [
+                            "\"SunCountVariable\"",
+                            "CurrentSun"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "aiGeneratedEventId": "plant-card-slot-select-preview",
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "CurrentSun",
+                                ">=",
+                                "GetArgumentAsNumber(\"SunValue\")"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                              },
+                              "parameters": [
+                                "Card",
+                                "Animation",
+                                "=",
+                                "\"Inactive\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "PlantCardCoolingDown",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "PlantCardCooldownTimer",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetNumberVariable"
+                              },
+                              "parameters": [
+                                "CurrentSun",
+                                "-",
+                                "GetArgumentAsNumber(\"SunValue\")"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "CopyVariableToArgument2"
+                              },
+                              "parameters": [
+                                "\"SunCountVariable\"",
+                                "CurrentSun"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetCenter"
+                              },
+                              "parameters": [
+                                "MousePreview",
+                                "=",
+                                "CursorX(\"UI\", 0) - Object.X()",
+                                "=",
+                                "CursorY(\"UI\", 0) - Object.Y()"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetZOrder"
+                              },
+                              "parameters": [
+                                "MousePreview",
+                                "=",
+                                "Card.ZOrder() + 20"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "OpacityCapability::OpacityBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "MousePreview",
+                                "Opacity",
+                                "=",
+                                "180"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetXY"
+                              },
+                              "parameters": [
+                                "CooldownMask",
+                                "=",
+                                "0",
+                                "=",
+                                "0"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetZOrder"
+                              },
+                              "parameters": [
+                                "CooldownMask",
+                                "=",
+                                "Card.ZOrder() + 1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ResizableCapability::ResizableBehavior::SetSize"
+                              },
+                              "parameters": [
+                                "CooldownMask",
+                                "Resizable",
+                                "Card.Width()",
+                                "Card.Height()"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "OpacityCapability::OpacityBehavior::SetValue"
+                              },
+                              "parameters": [
+                                "CooldownMask",
+                                "Opacity",
+                                "=",
+                                "110"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "PlantCardReady",
+                                "False",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "PlantCardHolding",
+                                "True",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "CurrentSun",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-follow-preview",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetCenter"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "=",
+                            "CursorX(\"UI\", 0) - Object.X()",
+                            "=",
+                            "CursorY(\"UI\", 0) - Object.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetZOrder"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "=",
+                            "Card.ZOrder() + 20"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "Opacity",
+                            "=",
+                            "180"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-arm-after-release",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardReady",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextReleased"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardReady",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-place-on-empty-slot",
+                      "type": "BuiltinCommonInstructions::ForEach",
+                      "object": "GroundSlot",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "IsCursorOnObject"
+                          },
+                          "parameters": [
+                            "GroundSlot",
+                            "",
+                            "no",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "MouseButtonFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardReady",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ZOrder"
+                          },
+                          "parameters": [
+                            "GroundSlot",
+                            "<",
+                            "500"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementRequested",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementX",
+                            "=",
+                            "GroundSlot.X() + GroundSlot.Width() / 2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardPlacementY",
+                            "=",
+                            "GroundSlot.Y() + GroundSlot.Height() / 2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlacementRequested",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlacementX",
+                            "=",
+                            "GroundSlot.X() + GroundSlot.Width() / 2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlacementY",
+                            "=",
+                            "GroundSlot.Y() + GroundSlot.Height() / 2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementRequestedVariable\"",
+                            "PlacementRequested"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementXVariable\"",
+                            "PlacementX"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CopyVariableToArgument2"
+                          },
+                          "parameters": [
+                            "\"PlacementYVariable\"",
+                            "PlacementY"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetZOrder"
+                          },
+                          "parameters": [
+                            "GroundSlot",
+                            "=",
+                            "500"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardReady",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardHolding",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "Opacity",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetXY"
+                          },
+                          "parameters": [
+                            "MousePreview",
+                            "=",
+                            "-10000",
+                            "=",
+                            "-10000"
+                          ]
+                        }
+                      ],
+                      "variables": [
+                        {
+                          "name": "PlacementRequested",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "PlacementX",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "PlacementY",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-advance-cooldown",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCooldownTimer",
+                            "+",
+                            "TimeDelta()"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-finish-cooldown",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "True",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCooldownTimer",
+                            ">=",
+                            "GetArgumentAsNumber(\"CooldownDuration\")"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "False",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCooldownTimer",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                          },
+                          "parameters": [
+                            "Card",
+                            "Animation",
+                            "=",
+                            "\"Active\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetXY"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "=",
+                            "0",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "Opacity",
+                            "=",
+                            "0"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "aiGeneratedEventId": "plant-card-slot-update-cooldown-mask",
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "PlantCardCoolingDown",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetXY"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "=",
+                            "0",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetZOrder"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "=",
+                            "Card.ZOrder() + 1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResizableCapability::ResizableBehavior::SetSize"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "Resizable",
+                            "Card.Width()",
+                            "Card.Height() * (1 - Variable(PlantCardCooldownTimer) / GetArgumentAsNumber(\"CooldownDuration\"))"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "CooldownMask",
+                            "Opacity",
+                            "=",
+                            "110"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PlantCards::PlantCardSlot",
+                  "type": "object"
+                },
+                {
+                  "description": "Grid slot object used for placement.",
+                  "name": "GroundSlot",
+                  "type": "object"
+                },
+                {
+                  "description": "Scene variable storing current sun.",
+                  "name": "SunCountVariable",
+                  "type": "variable"
+                },
+                {
+                  "description": "Card cost in sun.",
+                  "name": "SunValue",
+                  "type": "expression"
+                },
+                {
+                  "description": "Cooldown duration in seconds.",
+                  "name": "CooldownDuration",
+                  "type": "expression"
+                },
+                {
+                  "description": "Scene variable set true for one frame when placement is requested.",
+                  "name": "PlacementRequestedVariable",
+                  "type": "variable"
+                },
+                {
+                  "description": "Scene variable receiving requested placement center X.",
+                  "name": "PlacementXVariable",
+                  "type": "variable"
+                },
+                {
+                  "description": "Scene variable receiving requested placement center Y.",
+                  "name": "PlacementYVariable",
+                  "type": "variable"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "Handle"
+              }
+            ]
+          },
+          "propertyDescriptors": [
+            {
+              "value": "assets/sunflowerCard.png",
+              "type": "Resource",
+              "label": "Card sprite image",
+              "description": "Image resource used by the active card sprite.",
+              "name": "CardSpriteImage"
+            },
+            {
+              "value": "50",
+              "type": "Number",
+              "label": "Sun value",
+              "description": "Sun cost paid when the card is used.",
+              "name": "SunValue"
+            },
+            {
+              "value": "assets/SunFlowerSlotCooldownMask.png",
+              "type": "Resource",
+              "label": "Mask sprite image",
+              "description": "Image resource used by the cooldown mask sprite.",
+              "name": "MaskSpriteImage"
+            },
+            {
+              "value": "assets/SunFlower.png",
+              "type": "Resource",
+              "label": "Mouse preview sprite image",
+              "description": "Image resource used by the internal mouse-following preview sprite.",
+              "name": "MousePreviewSpriteImage"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Initialized",
+              "description": "Internal runtime flag for slot initialization.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardInitialized"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Cooling down",
+              "description": "Internal runtime flag for slot cooldown.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardCoolingDown"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Cooldown timer",
+              "description": "Internal elapsed cooldown time in seconds.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardCooldownTimer"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Holding preview",
+              "description": "Internal runtime flag for an unplaced plant preview.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardHolding"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Ready to place",
+              "description": "Internal runtime flag allowing placement after release.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardReady"
+            },
+            {
+              "value": "false",
+              "type": "Boolean",
+              "label": "Placement requested",
+              "description": "Internal one-frame placement request flag.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardPlacementRequested"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Placement X",
+              "description": "Internal requested placement center X.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardPlacementX"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Placement Y",
+              "description": "Internal requested placement center Y.",
+              "hidden": true,
+              "advanced": true,
+              "name": "PlantCardPlacementY"
+            }
+          ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "CardSpriteImage"
+              },
+              {
+                "propertyName": "SunValue"
+              },
+              {
+                "propertyName": "MaskSpriteImage"
+              },
+              {
+                "propertyName": "MousePreviewSpriteImage"
+              },
+              {
+                "propertyName": "PlantCardInitialized"
+              },
+              {
+                "propertyName": "PlantCardCoolingDown"
+              },
+              {
+                "propertyName": "PlantCardCooldownTimer"
+              },
+              {
+                "propertyName": "PlantCardHolding"
+              },
+              {
+                "propertyName": "PlantCardReady"
+              },
+              {
+                "propertyName": "PlantCardPlacementRequested"
+              },
+              {
+                "propertyName": "PlantCardPlacementX"
+              },
+              {
+                "propertyName": "PlantCardPlacementY"
+              }
+            ]
+          },
+          "variants": []
+        }
+      ]
+    }
+  ],
+  "externalLayouts": [
+    {
+      "associatedLayout": "global (for external)",
+      "name": "UI",
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "button",
+          "persistentUuid": "93b1e851-ec5e-4dcc-8729-c10fa7aebc38",
+          "width": 0,
+          "x": 6,
+          "y": 8,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "20b6dd17-d031-42a8-83d2-fef1bf510246",
+          "width": 0,
+          "x": 15,
+          "y": 13,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "editionSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.8541150717862364,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      }
+    }
+  ]
+}
