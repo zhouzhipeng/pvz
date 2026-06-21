@@ -335,6 +335,30 @@
         "name": "assets/peashooter3.gif",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/peashooter4.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/peashooter4.gif",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sunflower.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sunflower.gif",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/peashooter5.gif",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/peashooter5.gif",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -473,7 +497,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7592230641182252,
+        "zoomFactor": 0.5633027541007175,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -506,6 +530,9 @@
           "objects": [
             {
               "name": "Sunflower"
+            },
+            {
+              "name": "PeaShooter"
             }
           ]
         }
@@ -1186,7 +1213,8 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "PreviewImage": "PeaShooterCardPreview"
+            "PreviewImage": "PeaShooterCardPreview",
+            "PlantCard": "PeaShooter"
           }
         },
         {
@@ -1216,6 +1244,17 @@
           "name": "Sunflower",
           "persistentUuid": "584d6ff6-398e-4354-8011-94416cb06574",
           "type": "PvZ::Sunflower",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "PeaShooter",
+          "persistentUuid": "b44b9777-be97-4c97-b58a-4a5d151d8429",
+          "type": "PvZ::PeaShooter",
           "variant": "",
           "variables": [],
           "effects": [],
@@ -1270,6 +1309,9 @@
           },
           {
             "objectName": "Sunflower"
+          },
+          {
+            "objectName": "PeaShooter"
           }
         ]
       },
@@ -1709,6 +1751,28 @@
                   "parameters": [
                     "\"has plant: \" + WillPlant",
                     "\"info\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CreateByName"
+                  },
+                  "parameters": [
+                    "",
+                    "Plants",
+                    "WillPlant",
+                    "GroundSlot.X()",
+                    "GroundSlot.Y()",
+                    "\"Battle\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "CardPreviews",
                     ""
                   ]
                 }
@@ -3348,7 +3412,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 2.083364150299284,
+            "zoomFactor": 1.7074454641803685,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
@@ -4231,12 +4295,12 @@
                   "useMultipleDirections": false,
                   "directions": [
                     {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
+                      "looping": true,
+                      "timeBetweenFrames": 0.05,
                       "sprites": [
                         {
                           "hasCustomCollisionMask": true,
-                          "image": "assets/PC _ Computer - Plants vs. Zombies - Sunflower - Idle.gif",
+                          "image": "assets/sunflower.gif",
                           "points": [],
                           "originPoint": {
                             "name": "origine",
@@ -4252,20 +4316,1928 @@
                           "customCollisionMask": [
                             [
                               {
-                                "x": 6,
-                                "y": 15
+                                "x": 0,
+                                "y": 8
                               },
                               {
-                                "x": 67,
-                                "y": 15
+                                "x": 63,
+                                "y": 8
                               },
                               {
-                                "x": 67,
-                                "y": 77
+                                "x": 63,
+                                "y": 72
                               },
                               {
-                                "x": 6,
-                                "y": 77
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sunflower.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 8
+                              },
+                              {
+                                "x": 63,
+                                "y": 72
+                              },
+                              {
+                                "x": 0,
+                                "y": 72
                               }
                             ]
                           ]
@@ -4347,7 +6319,998 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.426186902248371,
+            "zoomFactor": 3.661146991112005,
+            "windowMask": false,
+            "selectedLayer": "",
+            "gameEditorMode": "instances-editor"
+          },
+          "eventsFunctions": [],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT"
+          },
+          "propertyDescriptors": [],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT"
+          },
+          "variants": []
+        },
+        {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "",
+          "description": "",
+          "fullName": "PeaShooter",
+          "helpPath": "",
+          "iconUrl": "",
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "PeaShooter",
+          "previewIconUrl": "",
+          "objects": [
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "NewSprite",
+              "persistentUuid": "f708f58d-4ce6-45b6-98dc-6a6be572e53f",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": true,
+                      "timeBetweenFrames": 0.1,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/peashooter5.gif",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 4,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 1
+                              },
+                              {
+                                "x": 65,
+                                "y": 72
+                              },
+                              {
+                                "x": 4,
+                                "y": 72
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "NewSprite"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "NewSprite",
+              "persistentUuid": "7719d558-0618-4eeb-a83b-5866de41c63d",
+              "width": 0,
+              "x": -7,
+              "y": -5,
+              "zOrder": 1,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridDepth": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridOffsetZ": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 3.101714910318591,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
