@@ -2094,7 +2094,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3488460667869351,
+        "zoomFactor": 0.5368754921931598,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2146,6 +2146,134 @@
           "x": 437,
           "y": 176,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PeaShooter",
+          "persistentUuid": "10252f52-e30a-4bd2-aee4-c75b5591a1c1",
+          "width": 0,
+          "x": 267,
+          "y": 117,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sunflower2",
+          "persistentUuid": "94c64150-5566-40d9-b811-ad7a600f1ac1",
+          "width": 0,
+          "x": 149,
+          "y": 479,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewPeaShooter",
+          "persistentUuid": "5163ce93-5d62-47d3-a446-ee85161244e9",
+          "width": 0,
+          "x": 267,
+          "y": 354,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sunflower",
+          "persistentUuid": "30eb9556-5316-4137-be2b-b0c1ea32eb50",
+          "width": 0,
+          "x": 427,
+          "y": 432,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CardPreview",
+          "persistentUuid": "3093ef1e-a1e9-4e1a-b12f-f749efbb61c4",
+          "width": 0,
+          "x": 540,
+          "y": 144,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sunflower3",
+          "persistentUuid": "583ea69c-7eb9-4143-a14e-12ebe615369f",
+          "width": 0,
+          "x": 296,
+          "y": 306,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CardPreview",
+          "persistentUuid": "becc3bbb-3a00-4d85-a67e-3861ce1d12db",
+          "width": 0,
+          "x": 202,
+          "y": 108,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "GroundSlot",
+          "persistentUuid": "6339ba00-34fb-4f5e-afc2-52801cf4ee9a",
+          "width": 0,
+          "x": 34,
+          "y": 30,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2235,6 +2363,61 @@
           "effects": [],
           "behaviors": [],
           "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "PeaShooter",
+          "persistentUuid": "e3bfd622-aa0b-471d-aaca-720983d14cba",
+          "type": "PvZ::CardSlot",
+          "variant": "PeaShooter",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "Sunflower2",
+          "persistentUuid": "7a2a0554-d766-449b-a925-9485392e3576",
+          "type": "PvZ::CardSlot",
+          "variant": "Sunflower",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "CardPreview",
+          "persistentUuid": "48989fac-4986-4555-9590-277f9e2e4f4d",
+          "type": "PvZ::CardPreview",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "Sunflower3",
+          "persistentUuid": "4fbfad07-0475-45cf-8fe4-acf3c631bd81",
+          "type": "PvZ::CardPreview",
+          "variant": "Sunflower",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "GroundSlot",
+          "persistentUuid": "bf829c89-ec62-44bc-b401-aa6c580498bd",
+          "type": "PvZ::GroundSlot",
+          "variant": "",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
         }
       ],
       "objectsFolderStructure": {
@@ -2248,6 +2431,21 @@
           },
           {
             "objectName": "Sunflower"
+          },
+          {
+            "objectName": "PeaShooter"
+          },
+          {
+            "objectName": "Sunflower2"
+          },
+          {
+            "objectName": "CardPreview"
+          },
+          {
+            "objectName": "Sunflower3"
+          },
+          {
+            "objectName": "GroundSlot"
           }
         ]
       },
@@ -4398,24 +4596,28 @@
               "value": "",
               "type": "Boolean",
               "label": "",
+              "hidden": true,
               "name": "Occupied"
             },
             {
               "value": "",
               "type": "Number",
               "label": "",
+              "hidden": true,
               "name": "SlotColumn"
             },
             {
               "value": "",
               "type": "Number",
               "label": "",
+              "hidden": true,
               "name": "SlotRow"
             },
             {
               "value": "",
               "type": "Number",
               "label": "",
+              "hidden": true,
               "name": "SlotIndex"
             }
           ],
