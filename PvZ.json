@@ -470,11 +470,9 @@
       "name": "MyObject",
       "persistentUuid": "6f49bc89-fb23-4d41-ba3f-9b46c930859e",
       "type": "PvZ::MyObject",
-      "variant": "",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {}
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -491,7 +489,32 @@
       }
     ]
   },
-  "objectsGroups": [],
+  "objectsGroups": [
+    {
+      "name": "Plants",
+      "objects": [
+        {
+          "name": "Sunflower"
+        },
+        {
+          "name": "PeaShooter"
+        },
+        {
+          "name": "NewText"
+        },
+        {
+          "name": "MyObject"
+        },
+        {
+          "name": "button"
+        }
+      ]
+    },
+    {
+      "name": "NewGroup",
+      "objects": []
+    }
+  ],
   "variables": [
     {
       "name": "SunFlowerSlotCooldownDuration",
@@ -527,7 +550,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3425279464141777,
+        "zoomFactor": 0.6222301449046062,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -552,17 +575,6 @@
             },
             {
               "name": "PeaShooterCardPreview"
-            }
-          ]
-        },
-        {
-          "name": "Plants",
-          "objects": [
-            {
-              "name": "Sunflower"
-            },
-            {
-              "name": "PeaShooter"
             }
           ]
         }
@@ -2094,7 +2106,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5368754921931598,
+        "zoomFactor": 0.8829161139333759,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2220,22 +2232,6 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "CardPreview",
-          "persistentUuid": "3093ef1e-a1e9-4e1a-b12f-f749efbb61c4",
-          "width": 0,
-          "x": 540,
-          "y": 144,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
           "name": "Sunflower3",
           "persistentUuid": "583ea69c-7eb9-4143-a14e-12ebe615369f",
           "width": 0,
@@ -2252,12 +2248,76 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "CardPreview",
-          "persistentUuid": "becc3bbb-3a00-4d85-a67e-3861ce1d12db",
+          "name": "GroundSlot",
+          "persistentUuid": "6339ba00-34fb-4f5e-afc2-52801cf4ee9a",
           "width": 0,
-          "x": 202,
-          "y": 108,
-          "zOrder": 13,
+          "x": 34,
+          "y": 30,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PeaShooter",
+          "persistentUuid": "4cd95386-b08a-404a-b179-9058cfb5d14f",
+          "width": 0,
+          "x": 245,
+          "y": -1,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MyObject",
+          "persistentUuid": "d7929615-5f85-46ac-b52c-83bd74d4017d",
+          "width": 0,
+          "x": 21,
+          "y": 328,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewPeaShooter",
+          "persistentUuid": "be23ca04-267b-41c5-998a-1ff0b9f88f45",
+          "width": 0,
+          "x": 79,
+          "y": 192,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sunflower",
+          "persistentUuid": "93ed7fd1-3f84-4310-a5f0-a3078b3756a8",
+          "width": 0,
+          "x": 102,
+          "y": 322,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2269,11 +2329,76 @@
           "keepRatio": true,
           "layer": "",
           "name": "GroundSlot",
-          "persistentUuid": "6339ba00-34fb-4f5e-afc2-52801cf4ee9a",
+          "persistentUuid": "5c97df43-28e7-44cd-a820-9c1aba919bb1",
           "width": 0,
-          "x": 34,
-          "y": 30,
-          "zOrder": 14,
+          "x": 398,
+          "y": 302,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CardPreview",
+          "persistentUuid": "7c4b1799-10cc-46fc-aa9b-72c7fbb8bcb9",
+          "width": 0,
+          "x": 449,
+          "y": 73,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Sunflower3",
+          "persistentUuid": "d8a23243-088b-41ec-9253-384217926bca",
+          "width": 0,
+          "x": 563,
+          "y": 62,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PeaShooter2",
+          "persistentUuid": "20ffa5eb-17cb-4604-80c7-d3c2ae545fc2",
+          "width": 0,
+          "x": 711,
+          "y": 60,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 171,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewText2",
+          "persistentUuid": "c0e72d72-512a-410a-83d6-d89c288ff5ce",
+          "width": 399,
+          "x": 564,
+          "y": 358,
+          "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2418,6 +2543,59 @@
           "effects": [],
           "behaviors": [],
           "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "name": "PeaShooter2",
+          "type": "PvZ::CardPreview",
+          "variant": "PeaShooter",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "NewText2",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Textssdf胜多负少",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 45,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Textssdf胜多负少",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 45,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2446,6 +2624,12 @@
           },
           {
             "objectName": "GroundSlot"
+          },
+          {
+            "objectName": "PeaShooter2"
+          },
+          {
+            "objectName": "NewText2"
           }
         ]
       },
@@ -3946,7 +4130,7 @@
                 "gridColor": 10401023,
                 "gridAlpha": 0.8,
                 "snap": false,
-                "zoomFactor": 1.073257754435501,
+                "zoomFactor": 1.1468593250883647,
                 "windowMask": false,
                 "selectedLayer": "",
                 "gameEditorMode": "instances-editor"
@@ -4678,7 +4862,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4714,7 +4904,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4750,7 +4946,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4786,7 +4988,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4822,7 +5030,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4858,7 +5072,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4894,7 +5114,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4930,7 +5156,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -4966,7 +5198,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5002,7 +5240,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5038,7 +5282,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5074,7 +5324,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5110,7 +5366,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5146,7 +5408,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5182,7 +5450,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5218,7 +5492,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5254,7 +5534,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5290,7 +5576,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5326,7 +5618,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5362,7 +5660,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5398,7 +5702,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5434,7 +5744,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5470,7 +5786,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5506,7 +5828,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5542,7 +5870,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5578,7 +5912,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5614,7 +5954,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5650,7 +5996,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5686,7 +6038,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5722,7 +6080,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5758,7 +6122,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5794,7 +6164,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5830,7 +6206,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5866,7 +6248,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5902,7 +6290,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5938,7 +6332,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -5974,7 +6374,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6010,7 +6416,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6046,7 +6458,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6082,7 +6500,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6118,7 +6542,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6154,7 +6584,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6190,7 +6626,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6226,7 +6668,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6262,7 +6710,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6298,7 +6752,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6334,7 +6794,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6370,7 +6836,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6406,7 +6878,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6442,7 +6920,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6478,7 +6962,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6514,7 +7004,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6550,7 +7046,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6586,7 +7088,13 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/sunflower.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "SunSpawnPoint",
+                              "x": 60,
+                              "y": 7.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
@@ -6676,8 +7184,8 @@
               "name": "NewSprite",
               "persistentUuid": "7719d558-0618-4eeb-a83b-5866de41c63d",
               "width": 0,
-              "x": -6,
-              "y": -13,
+              "x": 0,
+              "y": -6,
               "zOrder": 1,
               "numberProperties": [],
               "stringProperties": [],
@@ -6696,18 +7204,68 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.661146991112005,
+            "zoomFactor": 3.784602076124576,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
           },
-          "eventsFunctions": [],
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnSunTimer\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::Sunflower",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
           "eventsFunctionsFolderStructure": {
-            "folderName": "__ROOT"
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              }
+            ]
           },
-          "propertyDescriptors": [],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "name": "Sun"
+            }
+          ],
           "propertiesFolderStructure": {
-            "folderName": "__ROOT"
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "Sun"
+              }
+            ]
           },
           "variants": []
         },
@@ -7711,18 +8269,17 @@
           "areaMinZ": 0,
           "defaultName": "",
           "description": "",
-          "fullName": "MyObject",
+          "fullName": "Sun",
           "helpPath": "",
           "iconUrl": "",
           "isUsingLegacyInstancesRenderer": false,
-          "name": "MyObject",
+          "name": "Sun",
           "previewIconUrl": "",
           "objects": [
             {
               "adaptCollisionMaskAutomatically": true,
               "assetStoreId": "",
               "name": "NewSprite",
-              "persistentUuid": "8914f93e-249e-454f-b0a8-60bf51506292",
               "type": "Sprite",
               "updateIfNotVisible": false,
               "variables": [],
@@ -7730,17 +8287,16 @@
               "behaviors": [],
               "animations": [
                 {
-                  "name": "NewSprite",
+                  "name": "default",
                   "useMultipleDirections": false,
                   "directions": [
                     {
                       "looping": false,
-                      "metadata": "{\"pskl\":{}}",
                       "timeBetweenFrames": 0.08,
                       "sprites": [
                         {
                           "hasCustomCollisionMask": true,
-                          "image": "NewSprite8",
+                          "image": "assets/sun.png",
                           "points": [],
                           "originPoint": {
                             "name": "origine",
@@ -7756,20 +8312,20 @@
                           "customCollisionMask": [
                             [
                               {
-                                "x": 8,
-                                "y": 15
+                                "x": 7,
+                                "y": 7
                               },
                               {
-                                "x": 45,
-                                "y": 15
+                                "x": 73,
+                                "y": 7
                               },
                               {
-                                "x": 45,
-                                "y": 46
+                                "x": 73,
+                                "y": 73
                               },
                               {
-                                "x": 8,
-                                "y": 46
+                                "x": 7,
+                                "y": 73
                               }
                             ]
                           ]
@@ -7829,10 +8385,10 @@
               "keepRatio": true,
               "layer": "",
               "name": "NewSprite",
-              "persistentUuid": "c1471789-9342-4708-bd6d-e79ab074eb55",
+              "persistentUuid": "a02b8d41-edec-4d43-929d-eb62b4dc9dce",
               "width": 0,
-              "x": -2,
-              "y": -2,
+              "x": -8,
+              "y": -7,
               "zOrder": 1,
               "numberProperties": [],
               "stringProperties": [],
@@ -7851,7 +8407,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 4.617836677044972,
+            "zoomFactor": 3.0005358510051083,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
