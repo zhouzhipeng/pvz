@@ -267,6 +267,22 @@
         "name": "default2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/PeaBullet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/PeaBullet.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PeaBulletHit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/PeaBulletHit.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -367,6 +383,40 @@
       "effects": [],
       "behaviors": [],
       "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "name": "PeaBullet",
+      "type": "PvZ::PeaBullet",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "name": "Sunflower",
+      "persistentUuid": "584d6ff6-398e-4354-8011-94416cb06574",
+      "type": "PvZ::Sunflower",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "SunPrefab": "Sun"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "PeaShooter",
+      "persistentUuid": "b44b9777-be97-4c97-b58a-4a5d151d8429",
+      "type": "PvZ::PeaShooter",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
@@ -380,6 +430,15 @@
       },
       {
         "objectName": "Sun"
+      },
+      {
+        "objectName": "PeaBullet"
+      },
+      {
+        "objectName": "Sunflower"
+      },
+      {
+        "objectName": "PeaShooter"
       }
     ]
   },
@@ -400,6 +459,9 @@
       "objects": [
         {
           "name": "Sun"
+        },
+        {
+          "name": "PeaBullet"
         }
       ]
     }
@@ -413,7 +475,7 @@
     {
       "name": "HideGroundSlots",
       "type": "boolean",
-      "value": false
+      "value": true
     }
   ],
   "layouts": [
@@ -439,7 +501,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6649012700684078,
+        "zoomFactor": 0.6019327731092488,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1091,30 +1153,6 @@
           "effects": [],
           "behaviors": [],
           "content": {}
-        },
-        {
-          "assetStoreId": "",
-          "name": "Sunflower",
-          "persistentUuid": "584d6ff6-398e-4354-8011-94416cb06574",
-          "type": "PvZ::Sunflower",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "SunPrefab": "Sun"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "PeaShooter",
-          "persistentUuid": "b44b9777-be97-4c97-b58a-4a5d151d8429",
-          "type": "PvZ::PeaShooter",
-          "variant": "",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {}
         }
       ],
       "objectsFolderStructure": {
@@ -1158,12 +1196,6 @@
           },
           {
             "objectName": "GroundSlot"
-          },
-          {
-            "objectName": "Sunflower"
-          },
-          {
-            "objectName": "PeaShooter"
           }
         ]
       },
@@ -1567,7 +1599,6 @@
           "colorG": 195,
           "colorR": 23,
           "creationTime": 0,
-          "folded": true,
           "name": "Ground Slot Input",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3241,6 +3272,371 @@
             "children": [
               {
                 "propertyName": "DestroyAfterSecs"
+              }
+            ]
+          }
+        },
+        {
+          "description": "",
+          "fullName": "SpawnItemTimer",
+          "helpPath": "",
+          "iconUrl": "",
+          "name": "SpawnItemTimer",
+          "objectType": "",
+          "previewIconUrl": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnTimer\"",
+                        ">=",
+                        "SpawnInterval"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PvZ::PushSpawnRequest"
+                      },
+                      "parameters": [
+                        "",
+                        "SpawnObject",
+                        "SpawnPointX",
+                        "SpawnPointY",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"timer xy:\"+ SpawnPointX+\",\"+SpawnPointY",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"timer start\"",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the spawnPointX of the object.",
+              "fullName": "SpawnPointX",
+              "functionType": "ExpressionAndCondition",
+              "group": "SpawnItemTimer configuration",
+              "name": "SpawnPointX",
+              "sentence": "the spawnPointX",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "SpawnPointX"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "SpawnPointX",
+              "group": "SpawnItemTimer configuration",
+              "name": "SetSpawnPointX",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnPointX",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the spawnPointY of the object.",
+              "fullName": "SpawnPointY",
+              "functionType": "ExpressionAndCondition",
+              "group": "SpawnItemTimer configuration",
+              "name": "SpawnPointY",
+              "sentence": "the spawnPointY",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "SpawnPointY"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "SpawnPointY",
+              "group": "SpawnItemTimer configuration",
+              "name": "SetSpawnPointY",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SpawnPointY",
+                        "=",
+                        "Value"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::SpawnItemTimer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              },
+              {
+                "folderName": "SpawnItemTimer configuration",
+                "children": [
+                  {
+                    "functionName": "SpawnPointX"
+                  },
+                  {
+                    "functionName": "SetSpawnPointX"
+                  },
+                  {
+                    "functionName": "SpawnPointY"
+                  },
+                  {
+                    "functionName": "SetSpawnPointY"
+                  }
+                ]
+              }
+            ]
+          },
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "String",
+              "label": "",
+              "name": "SpawnObject"
+            },
+            {
+              "value": "3",
+              "type": "Number",
+              "unit": "Second",
+              "label": "",
+              "name": "SpawnInterval"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "hidden": true,
+              "name": "SpawnPointX"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "hidden": true,
+              "name": "SpawnPointY"
+            }
+          ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "SpawnPointX"
+              },
+              {
+                "propertyName": "SpawnPointY"
+              },
+              {
+                "propertyName": "SpawnInterval"
+              },
+              {
+                "propertyName": "SpawnObject"
               }
             ]
           }
@@ -5156,7 +5552,16 @@
               "updateIfNotVisible": false,
               "variables": [],
               "effects": [],
-              "behaviors": [],
+              "behaviors": [
+                {
+                  "name": "SpawnItemTimer",
+                  "type": "PvZ::SpawnItemTimer",
+                  "SpawnObject": "Sun",
+                  "SpawnInterval": 3,
+                  "SpawnPointX": 3.00000000000182,
+                  "SpawnPointY": 3.00000000000182
+                }
+              ],
               "animations": [
                 {
                   "name": "",
@@ -5172,8 +5577,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5214,8 +5619,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5256,8 +5661,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5298,8 +5703,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5340,8 +5745,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5382,8 +5787,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5424,8 +5829,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5466,8 +5871,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5508,8 +5913,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5550,8 +5955,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5592,8 +5997,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5634,8 +6039,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5676,8 +6081,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5718,8 +6123,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5760,8 +6165,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5802,8 +6207,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5844,8 +6249,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5886,8 +6291,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5928,8 +6333,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -5970,8 +6375,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6012,8 +6417,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6054,8 +6459,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6096,8 +6501,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6138,8 +6543,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6180,8 +6585,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6222,8 +6627,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6264,8 +6669,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6306,8 +6711,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6348,8 +6753,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6390,8 +6795,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6432,8 +6837,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6474,8 +6879,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6516,8 +6921,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6558,8 +6963,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6600,8 +7005,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6642,8 +7047,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6684,8 +7089,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6726,8 +7131,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6768,8 +7173,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6810,8 +7215,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6852,8 +7257,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6894,8 +7299,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6936,8 +7341,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -6978,8 +7383,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7020,8 +7425,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7062,8 +7467,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7104,8 +7509,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7146,8 +7551,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7188,8 +7593,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7230,8 +7635,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7272,8 +7677,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7314,8 +7719,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7356,8 +7761,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7398,8 +7803,8 @@
                           "points": [
                             {
                               "name": "SunSpawnPoint",
-                              "x": 60,
-                              "y": 7.5
+                              "x": 72,
+                              "y": 5
                             }
                           ],
                           "originPoint": {
@@ -7565,7 +7970,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 2.6277653992719334,
+            "zoomFactor": 3.206305760909339,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
@@ -7583,19 +7988,10 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "ResetObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"SpawnSunTimer\""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "DebuggerTools::ConsoleLog"
                       },
                       "parameters": [
-                        "\"timer start\"",
+                        "\"createdlife:\"+ ToString(Object.X())",
                         "",
                         ""
                       ]
@@ -7623,51 +8019,48 @@
               "functionType": "Action",
               "name": "doStepPostEvents",
               "sentence": "",
+              "events": [],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::Sunflower",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onPlacedInScene",
+              "sentence": "",
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Object",
-                        "\"SpawnSunTimer\"",
-                        ">=",
-                        "3"
-                      ]
-                    }
-                  ],
+                  "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "value": "DebuggerTools::ConsoleLog"
+                        "value": "PvZ::SpawnItemTimer::SetSpawnPointX"
                       },
                       "parameters": [
-                        "\"timer\"",
-                        "",
+                        "NewSprite",
+                        "SpawnItemTimer",
+                        "=",
+                        "Object.X()+ NewSprite.PointX(\"SunSpawnPoint\")",
                         ""
                       ]
                     },
                     {
                       "type": {
-                        "value": "ResetObjectTimer"
+                        "value": "PvZ::SpawnItemTimer::SetSpawnPointY"
                       },
                       "parameters": [
-                        "Object",
-                        "\"SpawnSunTimer\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PvZ::PushSpawnRequest"
-                      },
-                      "parameters": [
-                        "",
-                        "SunPrefab",
-                        "Object.X()+NewSprite.PointX(\"SunSpawnPoint\")",
-                        "Object.Y()+NewSprite.PointY(\"SunSpawnPoint\")",
+                        "NewSprite",
+                        "SpawnItemTimer",
+                        "=",
+                        "Object.Y()+ NewSprite.PointY(\"SunSpawnPoint\")",
                         ""
                       ]
                     }
@@ -7692,25 +8085,16 @@
                 "functionName": "onCreated"
               },
               {
+                "functionName": "onPlacedInScene"
+              },
+              {
                 "functionName": "doStepPostEvents"
               }
             ]
           },
-          "propertyDescriptors": [
-            {
-              "value": "",
-              "type": "String",
-              "label": "",
-              "name": "SunPrefab"
-            }
-          ],
+          "propertyDescriptors": [],
           "propertiesFolderStructure": {
-            "folderName": "__ROOT",
-            "children": [
-              {
-                "propertyName": "SunPrefab"
-              }
-            ]
+            "folderName": "__ROOT"
           },
           "variants": []
         },
@@ -7739,7 +8123,16 @@
               "updateIfNotVisible": false,
               "variables": [],
               "effects": [],
-              "behaviors": [],
+              "behaviors": [
+                {
+                  "name": "SpawnItemTimer",
+                  "type": "PvZ::SpawnItemTimer",
+                  "SpawnObject": "PeaBullet",
+                  "SpawnInterval": 3,
+                  "SpawnPointX": 3.00000000000182,
+                  "SpawnPointY": 3.00000000000182
+                }
+              ],
               "animations": [
                 {
                   "name": "",
@@ -7752,14 +8145,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7788,14 +8187,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7824,14 +8229,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7860,14 +8271,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7896,14 +8313,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7932,14 +8355,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -7968,14 +8397,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8004,14 +8439,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8040,14 +8481,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8076,14 +8523,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8112,14 +8565,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8148,14 +8607,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8184,14 +8649,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8220,14 +8691,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8256,14 +8733,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8292,14 +8775,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8328,14 +8817,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8364,14 +8859,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8400,14 +8901,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8436,14 +8943,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8472,14 +8985,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8508,14 +9027,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8544,14 +9069,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8580,14 +9111,20 @@
                         {
                           "hasCustomCollisionMask": true,
                           "image": "assets/peashooter5.gif",
-                          "points": [],
+                          "points": [
+                            {
+                              "name": "ShootPoint",
+                              "x": 46.5,
+                              "y": 6.5
+                            }
+                          ],
                           "originPoint": {
                             "name": "origine",
                             "x": 0,
                             "y": 0
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
                             "x": 0,
                             "y": 0
@@ -8690,14 +9227,72 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.206305760909333,
+            "zoomFactor": 3.4261869022483724,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
           },
-          "eventsFunctions": [],
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onPlacedInScene",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PvZ::SpawnItemTimer::SetSpawnPointX"
+                      },
+                      "parameters": [
+                        "NewSprite",
+                        "SpawnItemTimer",
+                        "=",
+                        "Object.X()+ NewSprite.PointX(\"ShootPoint\")",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PvZ::SpawnItemTimer::SetSpawnPointY"
+                      },
+                      "parameters": [
+                        "NewSprite",
+                        "SpawnItemTimer",
+                        "=",
+                        "Object.Y()+ NewSprite.PointY(\"ShootPoint\")",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::PeaShooter",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
           "eventsFunctionsFolderStructure": {
-            "folderName": "__ROOT"
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onPlacedInScene"
+              }
+            ]
           },
           "propertyDescriptors": [],
           "propertiesFolderStructure": {
@@ -9023,6 +9618,184 @@
             "gridAlpha": 0.8,
             "snap": false,
             "zoomFactor": 2.3789067416002223,
+            "windowMask": false,
+            "selectedLayer": "",
+            "gameEditorMode": "instances-editor"
+          },
+          "eventsFunctions": [],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT"
+          },
+          "propertyDescriptors": [],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT"
+          },
+          "variants": []
+        },
+        {
+          "areaMaxX": 56,
+          "areaMaxY": 34,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "",
+          "description": "",
+          "fullName": "PeaBullet",
+          "helpPath": "",
+          "iconUrl": "",
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "PeaBullet",
+          "previewIconUrl": "",
+          "objects": [
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "PeaBullet",
+              "persistentUuid": "2deab3e6-c791-4987-afd1-b6708114cf68",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "normal",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/PeaBullet.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "hit",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/PeaBulletHit.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "PeaBullet"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "PeaBullet",
+              "persistentUuid": "13aef415-6797-4eb1-b536-1d46b2f3f969",
+              "width": 0,
+              "x": 0,
+              "y": 0,
+              "zOrder": 1,
+              "numberProperties": [
+                {
+                  "name": "animation",
+                  "value": 0
+                }
+              ],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ],
+          "editionSettings": {
+            "grid": false,
+            "gridType": "rectangular",
+            "gridWidth": 32,
+            "gridHeight": 32,
+            "gridDepth": 32,
+            "gridOffsetX": 0,
+            "gridOffsetY": 0,
+            "gridOffsetZ": 0,
+            "gridColor": 10401023,
+            "gridAlpha": 0.8,
+            "snap": false,
+            "zoomFactor": 1.8860622122996107,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
