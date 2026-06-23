@@ -359,15 +359,6 @@
     },
     {
       "assetStoreId": "",
-      "name": "MyObject",
-      "persistentUuid": "6f49bc89-fb23-4d41-ba3f-9b46c930859e",
-      "type": "PvZ::MyObject",
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
       "name": "Sun",
       "persistentUuid": "81bece43-a9b4-4f10-8c76-959857e623b6",
       "type": "PvZ::Sun",
@@ -386,9 +377,6 @@
       },
       {
         "objectName": "NewText"
-      },
-      {
-        "objectName": "MyObject"
       },
       {
         "objectName": "Sun"
@@ -451,7 +439,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5449276150513489,
+        "zoomFactor": 0.6649012700684078,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1717,6 +1705,16 @@
                         "SpawnData.PosY",
                         "\"Spawn\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"abc >>\" + Spawable.ObjectName()",
+                        "",
+                        ""
+                      ]
                     }
                   ],
                   "variables": [
@@ -2131,22 +2129,6 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "MyObject",
-          "persistentUuid": "97a89f2f-296a-4dc8-afd4-987eb4117739",
-          "width": 0,
-          "x": 437,
-          "y": 176,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
           "name": "PeaShooter",
           "persistentUuid": "10252f52-e30a-4bd2-aee4-c75b5591a1c1",
           "width": 0,
@@ -2249,22 +2231,6 @@
           "x": 245,
           "y": -1,
           "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "MyObject",
-          "persistentUuid": "d7929615-5f85-46ac-b52c-83bd74d4017d",
-          "width": 0,
-          "x": 21,
-          "y": 328,
-          "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
