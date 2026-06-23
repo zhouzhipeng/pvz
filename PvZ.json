@@ -125,14 +125,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/SunFlower.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/SunFlower.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/SunFlowerG.png",
         "kind": "image",
         "metadata": "",
@@ -191,16 +183,8 @@
       {
         "file": "assets/sun.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/sun.png\",\"extension\":\".png\"}",
         "name": "assets/sun.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/SunFlowerSlotCooldownMask.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/SunFlowerSlotCooldownMask.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -221,102 +205,10 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
-        "name": "NewSprite",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite4",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Blue Button_Hovered.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blue Button_Hovered.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/1ffd07cb739df2a909155dd3057f6def46b833ced6ef1a09527b6ea59e88e464_Blue Button_Hovered.png",
-          "name": "Blue Button_Hovered.png"
-        }
-      },
-      {
-        "file": "assets/Blue Button_Idle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blue Button_Idle.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/eeac55458b66fb84f756b38085fbf7d1e079c39363c942abd35ea9d0939465ce_Blue Button_Idle.png",
-          "name": "Blue Button_Idle.png"
-        }
-      },
-      {
-        "file": "assets/Blue Button_Pressed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Blue Button_Pressed.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/f0ede8843d544f6e84bc09299a8aabffbce558966f25af98f7b47ab1648217ce_Blue Button_Pressed.png",
-          "name": "Blue Button_Pressed.png"
-        }
-      },
-      {
         "file": "assets/NewSprite6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/NewSprite7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite6",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/peashooter.gif",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/peashooter.gif",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/peashooter2.gif",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/peashooter2.gif",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Peashooter.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/Peashooter.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -333,14 +225,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/peashooter3.gif",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/peashooter4.gif",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/peashooter4.gif",
         "smoothed": true,
         "userAdded": false
       },
@@ -369,10 +253,18 @@
         "userAdded": false
       },
       {
-        "file": "assets/NewSprite9.png",
+        "file": "assets/default.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite8",
+        "name": "default",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default2",
         "smoothed": true,
         "userAdded": false
       }
@@ -473,6 +365,16 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "Sun",
+      "type": "PvZ::Sun",
+      "variant": "",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {}
     }
   ],
   "objectsFolderStructure": {
@@ -486,6 +388,9 @@
       },
       {
         "objectName": "MyObject"
+      },
+      {
+        "objectName": "Sun"
       }
     ]
   },
@@ -498,21 +403,16 @@
         },
         {
           "name": "PeaShooter"
-        },
-        {
-          "name": "NewText"
-        },
-        {
-          "name": "MyObject"
-        },
-        {
-          "name": "button"
         }
       ]
     },
     {
-      "name": "NewGroup",
-      "objects": []
+      "name": "Spawable",
+      "objects": [
+        {
+          "name": "Sun"
+        }
+      ]
     }
   ],
   "variables": [
@@ -1153,84 +1053,6 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "sun",
-          "persistentUuid": "de465320-91a6-4fe0-99b9-7eaf37d15c21",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "Age",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "BlinkTimer",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "BlinkVisible",
-              "type": "boolean",
-              "value": true
-            },
-            {
-              "name": "Collecting",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "name": "CollectTimer",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "CollectStartX",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "CollectStartY",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "assets/sun.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 40,
-                        "y": 40
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "assetStoreId": "",
           "name": "SunflowerCardSlot",
           "persistentUuid": "307e379c-d36e-47de-984f-5359a3a4d888",
@@ -1290,7 +1112,9 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "content": {}
+          "content": {
+            "SunPrefab": "Sun"
+          }
         },
         {
           "assetStoreId": "",
@@ -1330,9 +1154,6 @@
           },
           {
             "objectName": "FlagMeterParts1"
-          },
-          {
-            "objectName": "sun"
           },
           {
             "objectName": "SunflowerCardSlot"
@@ -1684,6 +1505,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Card Slot input",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1756,6 +1578,7 @@
           "colorG": 195,
           "colorR": 23,
           "creationTime": 0,
+          "folded": true,
           "name": "Ground Slot Input",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1816,6 +1639,106 @@
                   "parameters": [
                     "CardPreviews",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "WillPlant",
+                    "=",
+                    "\"\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 1,
+          "colorR": 122,
+          "creationTime": 0,
+          "name": "Handle Spawn Requests",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PvZ::HasSpawnRequest"
+                  },
+                  "parameters": [
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "JSONToVariableStructure2"
+                      },
+                      "parameters": [
+                        "PvZ::PollSpawnRequest()",
+                        "SpawnData"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "ToJSON(SpawnData)",
+                        "\"info\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CreateByName"
+                      },
+                      "parameters": [
+                        "",
+                        "Spawable",
+                        "SpawnData.ObjName",
+                        "SpawnData.PosX",
+                        "SpawnData.PosY",
+                        "\"Spawn\""
+                      ]
+                    }
+                  ],
+                  "variables": [
+                    {
+                      "name": "SpawnData",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "ObjName",
+                          "type": "string",
+                          "value": ""
+                        },
+                        {
+                          "name": "PosX",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "PosY",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2051,6 +1974,60 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Spawn",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -2106,7 +2083,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8829161139333759,
+        "zoomFactor": 0.7000000000000005,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2787,7 +2764,13 @@
       "authorIds": [],
       "dependencies": [],
       "globalVariables": [],
-      "sceneVariables": [],
+      "sceneVariables": [
+        {
+          "name": "SpawnQueue",
+          "type": "array",
+          "children": []
+        }
+      ],
       "eventsFunctions": [
         {
           "fullName": "",
@@ -2864,6 +2847,185 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Condition",
+          "name": "HasSpawnRequest",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VariableChildCount"
+                  },
+                  "parameters": [
+                    "SpawnQueue",
+                    ">",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnBoolean"
+                  },
+                  "parameters": [
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "StringExpression",
+          "name": "PollSpawnRequest",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "ToJSON(SpawnQueue[0])"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveVariableAt"
+                  },
+                  "parameters": [
+                    "SpawnQueue",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "expressionType": {
+            "type": "string"
+          },
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "PushSpawnRequest",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "Data.ObjName",
+                    "=",
+                    "objectName"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Data.PosX",
+                    "=",
+                    "posX"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Data.PosY",
+                    "=",
+                    "posY"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushString"
+                  },
+                  "parameters": [
+                    "SpawnQueue",
+                    "ToJSON(Data)"
+                  ]
+                }
+              ],
+              "variables": [
+                {
+                  "name": "Data",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "ObjName",
+                      "type": "string",
+                      "value": ""
+                    },
+                    {
+                      "name": "PosX",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "PosY",
+                      "type": "number",
+                      "value": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "",
+              "name": "objectName",
+              "type": "string"
+            },
+            {
+              "description": "",
+              "name": "posX",
+              "type": "expression"
+            },
+            {
+              "description": "",
+              "name": "posY",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "eventsFunctionsFolderStructure": {
@@ -2871,6 +3033,15 @@
         "children": [
           {
             "functionName": "IsMouseClickOrTouch"
+          },
+          {
+            "functionName": "HasSpawnRequest"
+          },
+          {
+            "functionName": "PollSpawnRequest"
+          },
+          {
+            "functionName": "PushSpawnRequest"
           }
         ]
       },
@@ -2936,6 +3107,150 @@
           "propertyDescriptors": [],
           "propertiesFolderStructure": {
             "folderName": "__ROOT"
+          }
+        },
+        {
+          "description": "",
+          "fullName": "AutoDestroy",
+          "helpPath": "",
+          "iconUrl": "",
+          "name": "AutoDestroy",
+          "objectType": "",
+          "previewIconUrl": "",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"DestroyTimer\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::JsCode",
+                  "inlineCode": [
+                    "let result = [];",
+                    "runtimeScene.getAllLayerNames(result);",
+                    "console.log(\"bb layers:\", result);"
+                  ],
+                  "parameterObjects": "",
+                  "useStrict": true,
+                  "eventsSheetExpanded": false
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::AutoDestroy",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"DestroyTimer\"",
+                        ">=",
+                        "DestroyAfterSecs"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"DestroyTimer\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "PvZ::AutoDestroy",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "eventsFunctionsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPreEvents"
+              }
+            ]
+          },
+          "propertyDescriptors": [
+            {
+              "value": "5",
+              "type": "Number",
+              "label": "",
+              "name": "DestroyAfterSecs"
+            }
+          ],
+          "propertiesFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "DestroyAfterSecs"
+              }
+            ]
           }
         }
       ],
@@ -3655,7 +3970,7 @@
                 "gridColor": 10401023,
                 "gridAlpha": 0.8,
                 "snap": false,
-                "zoomFactor": 2.3013059455022713,
+                "zoomFactor": 2.459124262157089,
                 "windowMask": false,
                 "selectedLayer": "",
                 "gameEditorMode": "instances-editor"
@@ -4130,7 +4445,7 @@
                 "gridColor": 10401023,
                 "gridAlpha": 0.8,
                 "snap": false,
-                "zoomFactor": 1.1468593250883647,
+                "zoomFactor": 1.1855318000859445,
                 "windowMask": false,
                 "selectedLayer": "",
                 "gameEditorMode": "instances-editor"
@@ -7172,6 +7487,60 @@
                 }
               ],
               "effects": []
+            },
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "Spawn",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [],
+              "effects": [
+                {
+                  "effectType": "Scene3D::HemisphereLight",
+                  "name": "3D Ambient Hemisphere Light",
+                  "doubleParameters": {
+                    "elevation": 40,
+                    "intensity": 0.33,
+                    "rotation": 300
+                  },
+                  "stringParameters": {
+                    "groundColor": "127;127;127",
+                    "skyColor": "255;255;255",
+                    "top": "Z+"
+                  },
+                  "booleanParameters": {}
+                },
+                {
+                  "effectType": "Scene3D::DirectionalLight",
+                  "name": "3D Sun Light",
+                  "doubleParameters": {
+                    "distanceFromCamera": 1500,
+                    "elevation": 40,
+                    "frustumSize": 4000,
+                    "intensity": 0.75,
+                    "minimumShadowBias": 0,
+                    "rotation": 300
+                  },
+                  "stringParameters": {
+                    "color": "255;255;255",
+                    "shadowQuality": "medium",
+                    "top": "Z+"
+                  },
+                  "booleanParameters": {
+                    "isCastingShadow": true
+                  }
+                }
+              ]
             }
           ],
           "instances": [
@@ -7204,7 +7573,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.784602076124576,
+            "zoomFactor": 2.6277653992719334,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
@@ -7228,6 +7597,87 @@
                         "Object",
                         "\"SpawnSunTimer\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"timer start\"",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::Sunflower",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnSunTimer\"",
+                        ">=",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DebuggerTools::ConsoleLog"
+                      },
+                      "parameters": [
+                        "\"timer\"",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"SpawnSunTimer\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PvZ::PushSpawnRequest"
+                      },
+                      "parameters": [
+                        "",
+                        "SunPrefab",
+                        "Object.X()+NewSprite.PointX(\"SunSpawnPoint\")",
+                        "Object.Y()+NewSprite.PointY(\"SunSpawnPoint\")",
+                        ""
+                      ]
                     }
                   ]
                 }
@@ -7248,22 +7698,25 @@
             "children": [
               {
                 "functionName": "onCreated"
+              },
+              {
+                "functionName": "doStepPostEvents"
               }
             ]
           },
           "propertyDescriptors": [
             {
               "value": "",
-              "type": "Number",
+              "type": "String",
               "label": "",
-              "name": "Sun"
+              "name": "SunPrefab"
             }
           ],
           "propertiesFolderStructure": {
             "folderName": "__ROOT",
             "children": [
               {
-                "propertyName": "Sun"
+                "propertyName": "SunPrefab"
               }
             ]
           },
@@ -8245,7 +8698,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.101714910318591,
+            "zoomFactor": 3.206305760909333,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
@@ -8280,19 +8733,27 @@
               "adaptCollisionMaskAutomatically": true,
               "assetStoreId": "",
               "name": "NewSprite",
+              "persistentUuid": "81b9977f-a359-4e40-8525-5df2d757f46d",
               "type": "Sprite",
               "updateIfNotVisible": false,
               "variables": [],
               "effects": [],
-              "behaviors": [],
+              "behaviors": [
+                {
+                  "name": "AudoDestroy",
+                  "type": "PvZ::AutoDestroy",
+                  "DestroyAfterSecs": 5
+                }
+              ],
               "animations": [
                 {
                   "name": "default",
                   "useMultipleDirections": false,
                   "directions": [
                     {
-                      "looping": false,
-                      "timeBetweenFrames": 0.08,
+                      "looping": true,
+                      "metadata": "{\"pskl\":{}}",
+                      "timeBetweenFrames": 0.2,
                       "sprites": [
                         {
                           "hasCustomCollisionMask": true,
@@ -8312,20 +8773,128 @@
                           "customCollisionMask": [
                             [
                               {
-                                "x": 7,
-                                "y": 7
+                                "x": 9,
+                                "y": 9
                               },
                               {
-                                "x": 73,
-                                "y": 7
+                                "x": 71,
+                                "y": 9
                               },
                               {
-                                "x": 73,
-                                "y": 73
+                                "x": 71,
+                                "y": 71
                               },
                               {
-                                "x": 7,
-                                "y": 73
+                                "x": 9,
+                                "y": 71
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "default",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 9,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 71
+                              },
+                              {
+                                "x": 9,
+                                "y": 71
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "default2",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 9,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 71
+                              },
+                              {
+                                "x": 9,
+                                "y": 71
+                              }
+                            ]
+                          ]
+                        },
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "assets/sun.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 9,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 9
+                              },
+                              {
+                                "x": 71,
+                                "y": 71
+                              },
+                              {
+                                "x": 9,
+                                "y": 71
                               }
                             ]
                           ]
@@ -8375,6 +8944,60 @@
                 }
               ],
               "effects": []
+            },
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera2DPlaneMaxDrawingDistance": 5000,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "test",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [],
+              "effects": [
+                {
+                  "effectType": "Scene3D::HemisphereLight",
+                  "name": "3D Ambient Hemisphere Light",
+                  "doubleParameters": {
+                    "elevation": 40,
+                    "intensity": 0.33,
+                    "rotation": 300
+                  },
+                  "stringParameters": {
+                    "groundColor": "127;127;127",
+                    "skyColor": "255;255;255",
+                    "top": "Z+"
+                  },
+                  "booleanParameters": {}
+                },
+                {
+                  "effectType": "Scene3D::DirectionalLight",
+                  "name": "3D Sun Light",
+                  "doubleParameters": {
+                    "distanceFromCamera": 1500,
+                    "elevation": 40,
+                    "frustumSize": 4000,
+                    "intensity": 0.75,
+                    "minimumShadowBias": 0,
+                    "rotation": 300
+                  },
+                  "stringParameters": {
+                    "color": "255;255;255",
+                    "shadowQuality": "medium",
+                    "top": "Z+"
+                  },
+                  "booleanParameters": {
+                    "isCastingShadow": true
+                  }
+                }
+              ]
             }
           ],
           "instances": [
@@ -8407,7 +9030,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 3.0005358510051083,
+            "zoomFactor": 2.3789067416002223,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
