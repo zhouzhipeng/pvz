@@ -369,6 +369,7 @@
     {
       "assetStoreId": "",
       "name": "Sun",
+      "persistentUuid": "81bece43-a9b4-4f10-8c76-959857e623b6",
       "type": "PvZ::Sun",
       "variant": "",
       "variables": [],
@@ -450,7 +451,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6222301449046062,
+        "zoomFactor": 0.5449276150513489,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1681,6 +1682,7 @@
               "actions": [],
               "events": [
                 {
+                  "aiGeneratedEventId": "mcp-direct-event",
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
@@ -2904,27 +2906,39 @@
           "sentence": "",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "colorB": 169,
+              "colorG": 126,
+              "colorR": 51,
+              "creationTime": 0,
+              "name": "Dequeue spawn request",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "SetReturnString"
-                  },
-                  "parameters": [
-                    "ToJSON(SpawnQueue[0])"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "RemoveVariableAt"
-                  },
-                  "parameters": [
-                    "SpawnQueue",
-                    "0"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnString"
+                      },
+                      "parameters": [
+                        "ToJSON(SpawnQueue[0])"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "RemoveVariableAt"
+                      },
+                      "parameters": [
+                        "SpawnQueue",
+                        "0"
+                      ]
+                    }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "expressionType": {
@@ -2940,72 +2954,84 @@
           "sentence": "",
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "colorB": 59,
+              "colorG": 111,
+              "colorR": 80,
+              "creationTime": 0,
+              "name": "Queue spawn request",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
                 {
-                  "type": {
-                    "value": "SetStringVariable"
-                  },
-                  "parameters": [
-                    "Data.ObjName",
-                    "=",
-                    "objectName"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Data.PosX",
-                    "=",
-                    "posX"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "Data.PosY",
-                    "=",
-                    "posY"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PushString"
-                  },
-                  "parameters": [
-                    "SpawnQueue",
-                    "ToJSON(Data)"
-                  ]
-                }
-              ],
-              "variables": [
-                {
-                  "name": "Data",
-                  "type": "structure",
-                  "children": [
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
-                      "name": "ObjName",
-                      "type": "string",
-                      "value": ""
+                      "type": {
+                        "value": "SetStringVariable"
+                      },
+                      "parameters": [
+                        "Data.ObjName",
+                        "=",
+                        "objectName"
+                      ]
                     },
                     {
-                      "name": "PosX",
-                      "type": "number",
-                      "value": 0
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Data.PosX",
+                        "=",
+                        "posX"
+                      ]
                     },
                     {
-                      "name": "PosY",
-                      "type": "number",
-                      "value": 0
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Data.PosY",
+                        "=",
+                        "posY"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PushVariable"
+                      },
+                      "parameters": [
+                        "SpawnQueue",
+                        "Data"
+                      ]
+                    }
+                  ],
+                  "variables": [
+                    {
+                      "name": "Data",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "ObjName",
+                          "type": "string",
+                          "value": ""
+                        },
+                        {
+                          "name": "PosX",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "PosY",
+                          "type": "number",
+                          "value": 0
+                        }
+                      ]
                     }
                   ]
                 }
-              ]
+              ],
+              "parameters": []
             }
           ],
           "parameters": [
