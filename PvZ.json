@@ -391,8 +391,17 @@
       "variant": "",
       "variables": [],
       "effects": [],
-      "behaviors": [],
-      "content": {}
+      "behaviors": [
+        {
+          "name": "DestroyOutside",
+          "type": "DestroyOutsideBehavior::DestroyOutside",
+          "extraBorder": 200,
+          "unseenGraceDistance": 1000
+        }
+      ],
+      "content": {
+        "ShootSpeed": 100
+      }
     },
     {
       "assetStoreId": "",
@@ -8148,8 +8157,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8190,8 +8199,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8232,8 +8241,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8274,8 +8283,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8316,8 +8325,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8358,8 +8367,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8400,8 +8409,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8442,8 +8451,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8484,8 +8493,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8526,8 +8535,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8568,8 +8577,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8610,8 +8619,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8652,8 +8661,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8694,8 +8703,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8736,8 +8745,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8778,8 +8787,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8820,8 +8829,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8862,8 +8871,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8904,8 +8913,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8946,8 +8955,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -8988,8 +8997,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -9030,8 +9039,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -9072,8 +9081,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -9114,8 +9123,8 @@
                           "points": [
                             {
                               "name": "ShootPoint",
-                              "x": 46.5,
-                              "y": 6.5
+                              "x": 65.5,
+                              "y": 14
                             }
                           ],
                           "originPoint": {
@@ -9617,7 +9626,7 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 2.3789067416002223,
+            "zoomFactor": 2.902657289106622,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
@@ -9633,11 +9642,11 @@
           "variants": []
         },
         {
-          "areaMaxX": 56,
-          "areaMaxY": 34,
+          "areaMaxX": 15,
+          "areaMaxY": 16,
           "areaMaxZ": 64,
-          "areaMinX": 0,
-          "areaMinY": 0,
+          "areaMinX": -40,
+          "areaMinY": -17,
           "areaMinZ": 0,
           "defaultName": "",
           "description": "",
@@ -9673,14 +9682,14 @@
                           "points": [],
                           "originPoint": {
                             "name": "origine",
-                            "x": 0,
-                            "y": 0
+                            "x": 40.5,
+                            "y": 17.5
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
-                            "x": 0,
-                            "y": 0
+                            "x": 40.5,
+                            "y": 17.5
                           },
                           "customCollisionMask": []
                         }
@@ -9702,14 +9711,14 @@
                           "points": [],
                           "originPoint": {
                             "name": "origine",
-                            "x": 0,
-                            "y": 0
+                            "x": 40.5,
+                            "y": 17.5
                           },
                           "centerPoint": {
-                            "automatic": true,
+                            "automatic": false,
                             "name": "centre",
-                            "x": 0,
-                            "y": 0
+                            "x": 40.5,
+                            "y": 17.5
                           },
                           "customCollisionMask": []
                         }
@@ -9795,18 +9804,95 @@
             "gridColor": 10401023,
             "gridAlpha": 0.8,
             "snap": false,
-            "zoomFactor": 1.8860622122996107,
+            "zoomFactor": 2.2262365153674017,
             "windowMask": false,
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
           },
-          "eventsFunctions": [],
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onPlacedInScene",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::PeaBullet",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetX"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.X() + TimeDelta() * ShootSpeed"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "PvZ::PeaBullet",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
           "eventsFunctionsFolderStructure": {
-            "folderName": "__ROOT"
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "functionName": "onPlacedInScene"
+              },
+              {
+                "functionName": "doStepPostEvents"
+              }
+            ]
           },
-          "propertyDescriptors": [],
+          "propertyDescriptors": [
+            {
+              "value": "",
+              "type": "Number",
+              "unit": "PixelSpeed",
+              "label": "",
+              "name": "ShootSpeed"
+            }
+          ],
           "propertiesFolderStructure": {
-            "folderName": "__ROOT"
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "propertyName": "ShootSpeed"
+              }
+            ]
           },
           "variants": []
         }
