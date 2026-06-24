@@ -467,6 +467,36 @@
         "name": "assets/Zombie_22.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "plant.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "plant.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "bgm1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "bgm1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/lawnmower.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/lawnmower.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -607,7 +637,17 @@
       "variant": "",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "isInheritedFromObjectType": true,
+          "name": "SpawnItemTimer",
+          "type": "PvZ::SpawnItemTimer",
+          "SpawnObject": "Sun",
+          "SpawnInterval": 3,
+          "SpawnPointX": 3.00000000000182,
+          "SpawnPointY": 3.00000000000182
+        }
+      ],
       "content": {
         "SunPrefab": "Sun"
       }
@@ -943,7 +983,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Spawn",
+          "layer": "Battle",
           "name": "Zoombie",
           "persistentUuid": "73d4dbe6-8336-47cd-803f-5ce87cb97701",
           "width": 0,
@@ -1461,7 +1501,6 @@
           "colorG": 118,
           "colorR": 92,
           "creationTime": 0,
-          "folded": true,
           "name": "Initialization",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1482,87 +1521,19 @@
               "actions": [],
               "events": [
                 {
+                  "colorB": 36,
+                  "colorG": 156,
+                  "colorR": 19,
+                  "creationTime": 0,
                   "folded": true,
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "Draw ground slots (5 rows x 9 columns)"
-                },
-                {
-                  "aiGeneratedEventId": "groundslot-grid-standard-local-vars",
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "StartX",
-                        "=",
-                        "GroundSlot.X()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "StartY",
-                        "=",
-                        "GroundSlot.Y()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "SlotWidth",
-                        "=",
-                        "GroundSlot.Width()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "SlotHeight",
-                        "=",
-                        "GroundSlot.Height()"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Row",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "GroundSlot",
-                        ""
-                      ]
-                    }
-                  ],
+                  "name": "Draw ground slots (5 rows x 9 columns)",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
                   "events": [
                     {
-                      "type": "BuiltinCommonInstructions::Repeat",
-                      "repeatExpression": "RowCount",
+                      "aiGeneratedEventId": "groundslot-grid-standard-local-vars",
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [],
                       "actions": [
                         {
@@ -1570,184 +1541,271 @@
                             "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "Column",
+                            "StartX",
+                            "=",
+                            "GroundSlot.X()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "StartY",
+                            "=",
+                            "GroundSlot.Y()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "SlotWidth",
+                            "=",
+                            "GroundSlot.Width()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "SlotHeight",
+                            "=",
+                            "GroundSlot.Height()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "Row",
                             "=",
                             "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "GroundSlot",
+                            ""
                           ]
                         }
                       ],
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Repeat",
-                          "repeatExpression": "ColumnCount",
+                          "repeatExpression": "RowCount",
                           "conditions": [],
                           "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "GroundSlot",
-                                "StartX + Column * SlotWidth",
-                                "StartY + Row * SlotHeight",
-                                "\"GroundSlot\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResizableCapability::ResizableBehavior::SetSize"
-                              },
-                              "parameters": [
-                                "GroundSlot",
-                                "Resizable",
-                                "SlotWidth",
-                                "SlotHeight"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PvZ::GroundSlot::SetSlotIndex"
-                              },
-                              "parameters": [
-                                "=",
-                                "RowCount*Row+ColumnCount",
-                                "="
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PvZ::GroundSlot::SetSlotRow"
-                              },
-                              "parameters": [
-                                "=",
-                                "Row",
-                                "="
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PvZ::GroundSlot::SetSlotColumn"
-                              },
-                              "parameters": [
-                                "=",
-                                "Column",
-                                "="
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "PvZ::GroundSlot::SetOccupied"
-                              },
-                              "parameters": [
-                                "GroundSlot",
-                                "no",
-                                "="
-                              ]
-                            },
                             {
                               "type": {
                                 "value": "SetNumberVariable"
                               },
                               "parameters": [
                                 "Column",
-                                "+",
-                                "1"
+                                "=",
+                                "0"
                               ]
                             }
                           ],
                           "events": [
                             {
-                              "aiGeneratedEventId": "groundslot-created-alpha-from-switch",
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "BooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "HideGroundSlots",
-                                    "True",
-                                    ""
-                                  ]
-                                }
-                              ],
+                              "type": "BuiltinCommonInstructions::Repeat",
+                              "repeatExpression": "ColumnCount",
+                              "conditions": [],
                               "actions": [
                                 {
                                   "type": {
-                                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "GroundSlot",
+                                    "StartX + Column * SlotWidth",
+                                    "StartY + Row * SlotHeight",
+                                    "\"GroundSlot\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ResizableCapability::ResizableBehavior::SetSize"
                                   },
                                   "parameters": [
                                     "GroundSlot",
-                                    "Opacity",
+                                    "Resizable",
+                                    "SlotWidth",
+                                    "SlotHeight"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PvZ::GroundSlot::SetSlotIndex"
+                                  },
+                                  "parameters": [
                                     "=",
-                                    "0"
+                                    "RowCount*Row+ColumnCount",
+                                    "="
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PvZ::GroundSlot::SetSlotRow"
+                                  },
+                                  "parameters": [
+                                    "=",
+                                    "Row",
+                                    "="
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PvZ::GroundSlot::SetSlotColumn"
+                                  },
+                                  "parameters": [
+                                    "=",
+                                    "Column",
+                                    "="
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "PvZ::GroundSlot::SetOccupied"
+                                  },
+                                  "parameters": [
+                                    "GroundSlot",
+                                    "no",
+                                    "="
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Column",
+                                    "+",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "aiGeneratedEventId": "groundslot-created-alpha-from-switch",
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "HideGroundSlots",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "OpacityCapability::OpacityBehavior::SetValue"
+                                      },
+                                      "parameters": [
+                                        "GroundSlot",
+                                        "Opacity",
+                                        "=",
+                                        "0"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
-                            }
-                          ]
-                        },
-                        {
-                          "folded": true,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
+                            },
                             {
-                              "type": {
-                                "value": "SetNumberVariable"
-                              },
-                              "parameters": [
-                                "Row",
-                                "+",
-                                "1"
+                              "folded": true,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "SetNumberVariable"
+                                  },
+                                  "parameters": [
+                                    "Row",
+                                    "+",
+                                    "1"
+                                  ]
+                                }
                               ]
                             }
                           ]
                         }
+                      ],
+                      "variables": [
+                        {
+                          "name": "RowCount",
+                          "type": "number",
+                          "value": 5
+                        },
+                        {
+                          "name": "ColumnCount",
+                          "type": "number",
+                          "value": 9
+                        },
+                        {
+                          "name": "StartX",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "StartY",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "SlotWidth",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "SlotHeight",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "Row",
+                          "type": "number",
+                          "value": 0
+                        },
+                        {
+                          "name": "Column",
+                          "type": "number",
+                          "value": 0
+                        }
                       ]
                     }
                   ],
-                  "variables": [
+                  "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
                     {
-                      "name": "RowCount",
-                      "type": "number",
-                      "value": 5
-                    },
-                    {
-                      "name": "ColumnCount",
-                      "type": "number",
-                      "value": 9
-                    },
-                    {
-                      "name": "StartX",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "StartY",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "SlotWidth",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "SlotHeight",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "Row",
-                      "type": "number",
-                      "value": 0
-                    },
-                    {
-                      "name": "Column",
-                      "type": "number",
-                      "value": 0
+                      "type": {
+                        "value": "PlayMusic"
+                      },
+                      "parameters": [
+                        "",
+                        "bgm1.mp3",
+                        "",
+                        "",
+                        ""
+                      ]
                     }
                   ]
                 }
@@ -1834,8 +1892,7 @@
           "colorG": 195,
           "colorR": 23,
           "creationTime": 0,
-          "folded": true,
-          "name": "Ground Slot Input",
+          "name": "Planting",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -1906,6 +1963,18 @@
                     "=",
                     "\"\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "plant.ogg",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ]
             }
@@ -1917,7 +1986,6 @@
           "colorG": 1,
           "colorR": 122,
           "creationTime": 0,
-          "folded": true,
           "name": "Handle Spawn Requests",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2062,6 +2130,18 @@
                   },
                   "parameters": [
                     "PeaBullet",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/lawnmower.ogg",
+                    "",
+                    "",
                     ""
                   ]
                 }
@@ -2382,6 +2462,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "SpawnItemTimer",
+          "type": "PvZ::SpawnItemTimer"
         },
         {
           "name": "Text",
@@ -2759,7 +2843,17 @@
           "variant": "",
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "isInheritedFromObjectType": true,
+              "name": "SpawnItemTimer",
+              "type": "PvZ::SpawnItemTimer",
+              "SpawnObject": "Sun",
+              "SpawnInterval": 3,
+              "SpawnPointX": 3.00000000000182,
+              "SpawnPointY": 3.00000000000182
+            }
+          ],
           "content": {}
         },
         {
@@ -3002,6 +3096,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "SpawnItemTimer",
+          "type": "PvZ::SpawnItemTimer"
         },
         {
           "name": "Text",
@@ -5856,16 +5954,7 @@
               "updateIfNotVisible": false,
               "variables": [],
               "effects": [],
-              "behaviors": [
-                {
-                  "name": "SpawnItemTimer",
-                  "type": "PvZ::SpawnItemTimer",
-                  "SpawnObject": "Sun",
-                  "SpawnInterval": 3,
-                  "SpawnPointX": 3.00000000000182,
-                  "SpawnPointY": 3.00000000000182
-                }
-              ],
+              "behaviors": [],
               "animations": [
                 {
                   "name": "",
@@ -8279,7 +8368,16 @@
             "selectedLayer": "",
             "gameEditorMode": "instances-editor"
           },
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "SpawnItemTimer",
+              "type": "PvZ::SpawnItemTimer",
+              "SpawnObject": "Sun",
+              "SpawnInterval": 3,
+              "SpawnPointX": 3.00000000000182,
+              "SpawnPointY": 3.00000000000182
+            }
+          ],
           "eventsFunctions": [
             {
               "fullName": "",
@@ -8350,7 +8448,7 @@
                         "value": "PvZ::SpawnItemTimer::SetSpawnPointX"
                       },
                       "parameters": [
-                        "NewSprite",
+                        "Object",
                         "SpawnItemTimer",
                         "=",
                         "Object.X()+ NewSprite.PointX(\"SunSpawnPoint\")",
@@ -8362,7 +8460,7 @@
                         "value": "PvZ::SpawnItemTimer::SetSpawnPointY"
                       },
                       "parameters": [
-                        "NewSprite",
+                        "Object",
                         "SpawnItemTimer",
                         "=",
                         "Object.Y()+ NewSprite.PointY(\"SunSpawnPoint\")",
@@ -10242,28 +10340,6 @@
             {
               "fullName": "",
               "functionType": "Action",
-              "name": "onPlacedInScene",
-              "sentence": "",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
-                }
-              ],
-              "parameters": [
-                {
-                  "description": "Object",
-                  "name": "Object",
-                  "supplementaryInformation": "PvZ::PeaBullet",
-                  "type": "object"
-                }
-              ],
-              "objectGroups": []
-            },
-            {
-              "fullName": "",
-              "functionType": "Action",
               "name": "doStepPostEvents",
               "sentence": "",
               "events": [
@@ -10370,9 +10446,6 @@
           "eventsFunctionsFolderStructure": {
             "folderName": "__ROOT",
             "children": [
-              {
-                "functionName": "onPlacedInScene"
-              },
               {
                 "functionName": "doStepPostEvents"
               },
